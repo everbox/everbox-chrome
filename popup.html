@@ -4,5 +4,17 @@
   </head>
   <body style="width:200px">
     Hello world
+    <span id="foo"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script>
+      $(document).ready(function() {
+        if($.cookie("foo") === null) {
+          $.cookie("foo", "0");
+        }
+        $.cookie("foo", parseInt($.cookie("foo"))+1);
+        $("#foo").text($.cookie("foo"));
+      });
+    </script>
   </body>
 </html>
