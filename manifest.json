@@ -1,0 +1,13 @@
+{
+	"name": "EverBox",
+	"version": "1.0",
+	"description": "A Simple EverBox Viewer",
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "EverBox Chrome Extension",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+	"http://www.everbox.com/"
+	]
+}
