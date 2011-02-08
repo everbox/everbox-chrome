@@ -1,19 +1,18 @@
 <!doctype html>
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <link rel="stylesheet" href="everbox-chrome.css" type="text/css" media="screen" charset="utf-8">
   </head>
   <body style="width:200px">
-    Hello world
-    <span id="foo"></span>
+    <div id="alert">123</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script src="jquery.cookie.js"></script>
+    <script src="everbox-chrome.js"></script>
     <script>
       $(document).ready(function() {
-        if($.cookie("foo") === null) {
-          $.cookie("foo", "0");
-        }
-        $.cookie("foo", parseInt($.cookie("foo"))+1);
-        $("#foo").text($.cookie("foo"));
+        $$ = $.ebce;
+        $$.login();
       });
     </script>
   </body>
