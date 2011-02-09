@@ -6,13 +6,16 @@
   </head>
   <body style="width:200px">
     <div id="alert">123</div>
+    <script src="sha1.js"></script>
+    <script src="oauth.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="oauth.consumer.js"></script>
     <script src="jquery.cookie.js"></script>
+    <script src="everbox-sdk.js"></script>
     <script src="everbox-chrome.js"></script>
     <script>
       $(document).ready(function() {
-        $$ = $.ebce;
-        $$.login();
+        $.ebce.start();
       });
     </script>
   </body>
